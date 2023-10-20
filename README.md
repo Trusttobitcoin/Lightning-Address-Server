@@ -14,11 +14,11 @@ LightningID-Server is a Flask application designed to facilitate receiving payme
         server_name your-domain.com;
 
         location /.well-known/lnurlp/ {
-            proxy_pass http://localhost:5002;
+            proxy_pass http://localhost:5005;
         }
 
         location /lnurlp/ {
-            proxy_pass http://localhost:5002;
+            proxy_pass http://localhost:5005;
         }
     }
     ```
