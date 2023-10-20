@@ -6,7 +6,9 @@ LightningID-Server is a Flask application designed to facilitate receiving payme
 
 - A running LND (Lightning Network Daemon) setup.
 - nginx installed on your server. Configure it using the following setup:
-- Create a new server block or edit an existing one in your nginx configuration. Replace your-domain.com with your actual domain name:
+    - Create a new server block or edit an existing one in your nginx configuration. Replace `your-domain.com` with your actual domain name:
+
+    ```nginx
     server {
         listen 80;
         server_name your-domain.com;
@@ -19,15 +21,19 @@ LightningID-Server is a Flask application designed to facilitate receiving payme
             proxy_pass http://localhost:5002;
         }
     }
+    ```
 
-    Test and reload nginx configuration:
+    - Test and reload nginx configuration:
+    ```bash
     sudo nginx -t
     sudo systemctl reload nginx
+    ```
   
 - Python 3.6 or higher.
 
 ## Usage
-Running the Server
+
+### Running the Server
+
+```bash
 python3 app.py
-
-
