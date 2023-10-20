@@ -31,7 +31,6 @@ LightningID-Server is a Flask application designed to facilitate receiving payme
   
 - Python 3.6 or higher.
 
-## Usage
 
 ### Running the Server
 
