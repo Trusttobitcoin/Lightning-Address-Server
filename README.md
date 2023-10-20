@@ -25,6 +25,8 @@ server {
         proxy_pass http://localhost:5002;
     }
 }
+
+
 Test the configuration and reload nginx:
 sudo nginx -t
 sudo systemctl reload nginx
